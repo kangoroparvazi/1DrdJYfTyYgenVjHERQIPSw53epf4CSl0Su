@@ -1,0 +1,48 @@
+//console.log(errorMsg.indexOf("problem:username/password")   )
+	$("input,select,textarea").not("[type=submit]").jqBootstrapValidation({
+		preventSubmit: true,
+		submitError: function ($form, event, errors) {
+			// Here I do nothing, but you could do something like display 
+			// the error messages to the user, log, etc.
+			// alert("OK");
+		},
+		submitSuccess: function ($form, event) {
+
+		},
+		filter: function () {
+			return $(this).is(":visible");
+		}
+	});
+	$(".version-control").html(`Version: ${pageInfo.portalversion} - ${pageInfo.globalversion} , Broswer:  ${pageInfo.browser} `)
+	// $("#auth").on("keyup paste keypress", function () {
+	// 	if ($(this).val().length >= 6) {
+	// 		$("#authForm").trigger("submit");
+	// 	}
+	// })
+	$("#refreshCaptcha").on("click", function () {
+		$("#captchaImage").attr("src", (typeof AdminPanelDirectory !== 'undefined' ? AdminPanelDirectory : '') + "/engine/captcha.ashx?" + Math.random())
+	})
+	// Remember checkbox
+	if ($('.chk-remember').length) {
+		$('.chk-remember').iCheck({
+			checkboxClass: 'icheckbox_square-blue',
+			radioClass: 'iradio_square-blue',
+		});
+	}
+	for (let i = localStorage.length - 1; i >= 0; i--) {
+		const key = localStorage.key(i);
+		if (key && key.startsWith('File_Manager')) {
+			localStorage.removeItem(key);
+			console.log(`Removed: ${key}`);
+		}
+	}
+});
+
+function codeForm() {
+	var passwordText = document.querySelector("#user-password-text");
+	var password = document.querySelector("#user-password");
+	password.value = passwordText.value;
+	if (password.value == passwordText.value) {
+		password.value = $.Base64_encode(passwordText.value);
+	}
+}
