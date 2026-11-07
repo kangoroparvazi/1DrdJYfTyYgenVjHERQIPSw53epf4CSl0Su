@@ -1,124 +1,153 @@
 
 <!DOCTYPE html>
-<html class="loading" lang="en">
+<html class="loading" lang="en" data-textdirection="rtl">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="Esprit Portal Admin">
-    <meta name="keywords" content="Esprit Portal Admin">
-    <title>Esprit Portal Admin</title>
-    <link rel="apple-touch-icon" href="/admin/assets/images/favicon-admin-120.png">
-    <link rel="shortcut icon" type="image/x-icon" href="/admin/assets/images/favicon-admin.ico">
+    <meta name="description"
+        content="Robust admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template.">
+    <meta name="keywords"
+        content="admin template, robust admin template, dashboard template, flat admin template, responsive admin template, web app, crypto dashboard, bitcoin dashboard">
+    <meta name="author" content="PIXINVENT">
+    <title> Esprit Portal Admin</title>
+    <link rel="apple-touch-icon" href="assets/images/favicon-/admin-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon-/admin.ico">
     <!-- BEGIN VENDOR CSS-->
-    <link rel="stylesheet" type="text/css" href="/admin/app-assets/css-rtl/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="/admin/app-assets/vendors/css/forms/icheck/square/_all.css">
-    <link rel="stylesheet" type="text/css" href="/admin/app-assets/vendors/css/forms/icheck/custom.css">
-    <link rel="stylesheet" type="text/css" href="/admin/app-assets/css-rtl/core/colors/palette-switch.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css-rtl/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/icheck/icheck.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/icheck/custom.css">
     <!-- END VENDOR CSS-->
     <!-- BEGIN ROBUST CSS-->
-    <link rel="stylesheet" type="text/css" href="/admin/app-assets/css-rtl/app.min.css">
-    <link rel="stylesheet" type="text/css" href="/admin/app-assets/css-rtl/custom-rtl.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css-rtl/app.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css-rtl/custom-rtl.css">
     <!-- END ROBUST CSS-->
     <!-- BEGIN Page Level CSS-->
-    <link rel="stylesheet" type="text/css" href="/admin/app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="/admin/app-assets/css/core/colors/palette-gradient.css">
-    <link rel="stylesheet" type="text/css" href="/admin/app-assets/css/pages/login-register.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css-rtl/core/menu/menu-types/vertical-multi-level-menu.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css-rtl/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css-rtl/pages/login-register.css">
     <!-- END Page Level CSS-->
     <!-- BEGIN Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="/admin/assets/css/style-rtl.css">
-    <link rel="stylesheet" type="text/css" href="/admin/assets/css/theme-admin.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style-rtl.css">
     <!-- END Custom CSS-->
-    <script>AdminPanelDirectory="/admin";
-var pageInfo= {"csrf": "" ,"SSO":"False","fullname":"", "userunicid":"","mobile":"","portalversion":"3.1.36.1906","globalversion":"140503192115","browser":"Firefox140", "i18n":{"Esprit_Portal":"اسپریت پورتال","Login_In_Esprit":"ورود به سیستم","Powered_By":"توسعه دهنده","Login":"ورود","Dir":"rtl","Two_Factor_Authentication":"احراز هویت اجباری دو مرحله ای (در صورت فعال بودن پیامک یا ایمیل)","Back_To_Login":"بازکشت به صفحه ورود","Forgot_Password":"فراموشی رمز عبور"}, "pagedata":{}};</script>
+    <script>var pageInfo= {"status":0, "i18n":{"Esprit_Portal":"اسپریت پورتال","Login_In_Esprit":"ورود به سیستم","Powered_By":"توسعه دهنده","Login":"ورود","Back_To_Login":"بازکشت به صفحه ورود","Dir":"rtl","Two_Factor_Authentication":"احراز هویت اجباری دو مرحله ای (در صورت فعال بودن پیامک یا ایمیل)","Forgot_Password":"فراموشی رمز عبور","Resend_Code_Desc":"برای بازیابی رمز عبور، لطفا کدی که برای شما ارسال شده است را وارد نمایید.","Send":"ارسال","User_Name":"نام کاربری","Phone_Or_Email":"شماره تماس/ایمیل","Remain_Time":"زمان باقی مانده","Resend_Code":"ارسال مجدد کد","Forgot_Pass_Desc":"برای بازیابی رمز عبور، لطفا نام کاربری، ایمیل یا شماره همراه ثبت شده خود را وارد کنید.","Verification_Code":"کد تایید","Captcha_Error":"کپچا درست وارد نشده است","Wrong_Code":"کد وارد شده اشتباه هست","User_Not_Active":"کاربر مورد نظر فعال نیست","User_Not_Admin":"کاربر امکان ورود به کنترل پنل را ندارد","Wrong_Username_Or_Phone_Or_Email":"نام کاربری یا ایمیل/شماره تماس نوشته شده اشتباه هست","Change_Pass_Successfull":"رمز عبور شما با موفقیت تغییر یافت. چند ثانیه دیگر به صفحه ورود ادمین بازگردانده خواهید شد.","Code_Is_Expired":"کد ارسال شده برای شما منقضی شده است. لطفا برای دریافت کد جدید اقدام کنید.","Password_Validation_Failed":"رمز عبور شما با الگوی تعریف شده مطابقت ندارد","User_Must_Wait":"لطفا دو دقیقه صبر کنید و سپس دوباره تلاش کنید.","Change_Password":"تغییر گذرواژه","New_Password":"رمز عبور جدید","Repeat_New_Password":"تکرار رمز عبور جدید","Code_Is_Expired":"کد ارسال شده برای شما منقضی شده است. لطفا برای دریافت کد جدید اقدام کنید."},"passwordlength":"8","specialchars":"0","pagedata":{"username":"","mobileorphone":""} };</script>
+
 </head>
 
-<body class="vertical-layout vertical-menu 1-column blank-page blank-page dir-ltr" data-open="click"
-    data-menu="vertical-menu" data-col="1-column">
+<body class="vertical-layout vertical-mmenu 1-column   menu-expanded blank-page blank-page" data-open="click"
+    data-menu="vertical-mmenu" data-col="1-column">
     <!-- ////////////////////////////////////////////////////////////////////////////-->
-    <div class="app-content">
+    <div class="app-content content">
         <div class="content-wrapper">
             <div class="content-header row">
             </div>
-            <div class="content-body login">
-                <section class="flexbox-container height-auto mt-3">
-                    <div class="col-12 d-flex align-items-center justify-content-center dir-rtl">
-                        <div class="col-xs-12 col-md-6 col-lg-4 col-10 box-shadow-2 p-0">
-                            <div class="card border-grey border-lighten-3 m-0">
-                                <div class="card-header border-0">
-                                    
-                                        <div class="card-title text-center">
-                                            <div class=""><img src="/admin/assets/images/logo-admin.png"
-                                                    alt="Esprit Portal Admin"> </div>
-                                        </div>
-                                        
-                                        <a href="https://niafam.com/%D9%BE%D9%88%D8%B1%D8%AA%D8%A7%D9%84-%D8%B3%D8%A7%D8%B2%D9%85%D8%A7%D9%86%DB%8C-%D9%87%D9%88%D8%B4%D9%85%D9%86%D8%AF"
-                                            target="_blank">
-                                            <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-2 ">
-                                                <span data-local="">Esprit Portal Admin</span></h6>
-                                        </a>
-                                    
-                                    
+            <div class="content-body">
+                <section class="flexbox-container">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="col-md-4 col-10 box-shadow-2 p-0">
+                            <div class="card border-grey border-lighten-3 px-2 py-2 m-0" id="forgotForm">
+                                <div class="card-header border-0 text-center">
+                                    <h3 class="mt-1  font-weight-bold  mt-1 ">$Forgot_Password$</h3>
                                 </div>
+                                <p class="card-subtitle line-on-side text-muted text-center font-small-3 mx-2">
+                                    $Forgot_Password$</p>
                                 <div class="card-content">
                                     <div class="card-body">
-                                        <form class="form-horizontal form-simple" action="/admin/loginprocess.aspx" onsubmit="codeForm()"
-                                            method="post">
-                                            <fieldset class="form-group position-relative has-icon-right mb-0">
-                                                <input type="text" class="form-control form-control-lg input-lg dir-ltr"
-                                                    name="username" id="user-name"  tabindex="1" placeholder="$User_Name$"
-                                                    autocomplete="off" required>
-                                                <div class="form-control-position">
-                                                    <i class="far fa-user"></i>
-                                                </div>
+                                        <form class="form-horizontal" action="" method="POST" >
+                                            <input class="d-none" type="text" name="action" id="action" value="checkuserinfo">
+                                            <div class="forgotForm_desc mb-1" style="font-size: 12px;">
+                                                <span>$Forgot_Pass_Desc$</span>
+                                            </div>
+                                            <fieldset class="form-group position-relative mb-0">
+                                                <input type="type"
+                                                    class="form-control form-control-lg input-lg text-center pl-1 pr-1"
+                                                    name="username" id="username" placeholder="$User_Name$" required
+                                                    maxlength="64">
                                             </fieldset>
-                                            <fieldset class="form-group position-relative has-icon-right">
-                                                <input type="password"
-                                                    class="form-control form-control-lg input-lg dir-ltr"
-                                                    name="" id="user-password-text"  autocomplete="off"
-                                                    placeholder="$Password$"   tabindex="2" required>
-                                                    <input type="password"
-                                                    class="form-control form-control-lg input-lg dir-ltr"
-                                                    name="password" id="user-password"  autocomplete="off"
-                                                    placeholder="$Password$"   tabindex="2" hidden>
-                                                <div class="form-control-position">
-                                                    <i class="fa fa-key"></i>
-                                                </div>
+                                            <fieldset class="form-group position-relative">
+                                                <input type="type"
+                                                    class="form-control form-control-lg input-lg text-center  pl-1 pr-1"
+                                                    name="mobileorphone" id="mobileorphone" placeholder="$Phone_Or_Email$" required
+                                                    maxlength="64">
                                             </fieldset>
-                                            <fieldset class="form-group position-relative has-icon-right">
-                                                <label class="col-md-12 label-control">$Control_Panel_Language$</label>
-                                                <div class="col-md-12">
-                                                  <select name="adminlanguage" id="adminlanguage" class="form-control">
-                                                    <option value="FA"  selected>$Persian$ </option>
-                                                    <option value="EN" >$English$</option>
-                                                  </select>
-                                                </div>
-                                                
-                                            </fieldset>
-                                            <div class="form-group row">
+                                            <div class="form-group row recaptcha">
                                                 <div class="col-md-6 mb-md-0 mb-1"><div class="input-group"><div class="input-group-append"><button class="btn btn-primary" type="button" id="refreshCaptcha"><i class="fas fa-sync-alt"></i></button></div><input type="text" tabindex="3" class="form-control font-large-1" placeholder="Captcha" name="recaptcha"id="recaptcha"></div></div><div class="col-md-5 d-flex justify-content-center"><img src="/admin/engine/captcha.ashx" id="captchaImage" class="img-fluid"></div>
                                             </div>
-                                            <div class="form-group row">
-                                                <div class="col-12" id="errMsg"> </div>
-                                            </div>
-                                            <button type="submit" class="btn btn-info btn-lg btn-block btn-admin" tabindex="4"> <span>$Login$</span> <i
-                                                class="fas fa-unlock"></i></button>
-                                            <a href="" class="btn btn-info btn-lg btn-block btn-admin btn-gov-login" tabindex="5"><span>$SSO_Login$</span> </a>
-                                            <a href="/admin/passwordrecovery.aspx" class="btn btn-link d-flex mr-auto ml-auto text-info font-weight-bold" tabindex="6"  style="width: max-content;">$Forgot_Password$</span> </a>
+                                            <div class="alerts"></div>
+                                            <button type="submit" class="btn btn-info btn-lg btn-block btn-admin"><i
+                                                    class="fas fa-paper-plane" style="margin-left: 6px;"></i> $Send$
+                                            </button>
+                                            <a href="login.aspx"
+                                                class="btn btn-outline-danger btn-lg btn-block card-link"><i
+                                                    class="fas fa-sign-in-alt"
+                                                    style="margin-left: 6px;"></i>$Back_To_Login$</a>
                                         </form>
                                     </div>
                                 </div>
-                                <div class="card-footer">
-                                    <div class="">
-                                        
-                                        <p class="text-center mb-1"> <span> $A_Product_From$ </span> <a
-                                            href="https://niafam.com"   class="card-link"> niafam.com </a>
-                                        </p>
-                                        
+                            </div>
+                            <div class="card border-grey border-lighten-3 px-2 py-2 m-0" id="codeAuthForm">
+                                <div class="card-header border-0 text-center">
+                                    <h3 class="mt-1  font-weight-bold  mt-1 ">$Forgot_Password$</h3>
+                                </div>
+                                <p class="card-subtitle line-on-side text-muted text-center font-small-3 mx-2">
+                                    $Forgot_Password$</p>
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <form class="form-horizontal" action="" method="POST">
+                                            <input class="d-none" type="text" name="action" id="action" value="checkforgotcode">
+                                            <div class="forgotForm_desc mb-1" style="font-size: 12px;">$Resend_Code_Desc$</div>
+                                            <fieldset class="form-group position-relative sec__resend-code">
+                                                <input type="type"
+                                                    class="form-control form-control-lg input-lg text-center  pl-1 pr-1"
+                                                    name="verificationCode" id="verificationCode"
+                                                    placeholder="$Verification_Code$" required maxlength="64">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="timer" id="timer"><strong>$Remain_Time$</strong> : <span
+                                                            id="countdown">2:00</span></div>
+                                                    <button type="submit"
+                                                        class="btn btn-info btn-lg btn-block ml-1 resend-code"
+                                                        style="background: #072e79 !important;border: none; font-size: 12px;"
+                                                        disabled>$Resend_Code$ </button>
+                                                </div>
+                                            </fieldset>
+                                            <div class="alerts"></div>
+                                            <button type="submit" class="btn btn-info btn-lg btn-block btn-admin"><i
+                                                    class="fas fa-paper-plane" style="margin-left: 6px;"></i> $Send$
+                                            </button>
+                                            <a href="login.aspx"
+                                                class="btn btn-outline-danger btn-lg btn-block card-link"><i
+                                                    class="fas fa-sign-in-alt"
+                                                    style="margin-left: 6px;"></i>$Back_To_Login$</a>
+                                        </form>
                                     </div>
-                                    <div class="text-center vversion-control grey lighten-1 font-small-1">
-                                        version : <span id="portal-version"></span>
+                                </div>
+                            </div>
+                            <div class="card border-grey border-lighten-3 px-2 py-2 m-0" id="changePassForm">
+                                <div class="card-header border-0 text-center">
+                                    <h3 class="mt-1  font-weight-bold  mt-1 ">$Change_Password$</h3>
+                                </div>
+                                <p class="card-subtitle line-on-side text-muted text-center font-small-3 mx-2"> $Change_Password$</p>
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <form class="form-horizontal" action="" method="POST" autocomplete="off">
+                                            <input class="d-none" type="text" name="action" id="action" value="changepassword">
+                                            <fieldset class="form-group position-relative sec__resend-code">
+                                                <input type="password" name="password" id="password" class="form-control basic-maxlength  dir-ltr" maxlength="64" placeholder="$New_Password$"
+                                                        pattern="^(?:(?=.*[a-z])(?:(?=.*[A-Z])(?=.*[\d\W])|(?=.*\W)(?=.*\d))|(?=.*\W)(?=.*[A-Z])(?=.*\d)).{8,}$" data-validation-pattern-message="$Password_Validation$" >
+                                            </fieldset>
+                                            <fieldset class="form-group position-relative sec__resend-code">
+                                                <input type="password" name="repeatpassword" id="repeatpassword"  class="form-control  dir-ltr"  placeholder="$Repeat_New_Password$" data-validation-matches-match="password"  data-validation-matches-message="$Match_Validation$" >
+                                            </fieldset>
+                                            <div class="alerts"></div>
+                                            <button type="submit" class="btn btn-info btn-lg btn-block btn-admin"><i
+                                                    class="fas fa-paper-plane" style="margin-left: 6px;"></i> $Send$
+                                            </button>
+                                            <a href="login.aspx"
+                                                class="btn btn-outline-danger btn-lg btn-block card-link"><i
+                                                    class="fas fa-sign-in-alt"
+                                                    style="margin-left: 6px;"></i>$Back_To_Login$</a>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -131,33 +160,164 @@ var pageInfo= {"csrf": "" ,"SSO":"False","fullname":"", "userunicid":"","mobile"
     <!-- ////////////////////////////////////////////////////////////////////////////-->
 
     <!-- BEGIN VENDOR JS-->
-    <script src="/admin/app-assets/vendors/js/vendors.min.js"></script>
-    <script src="/admin/app-assets/js/scripts/base64rpc.js"></script>
+    <script src="app-assets/vendors/js/vendors.min.js"></script>
     <!-- BEGIN VENDOR JS-->
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="/admin/app-assets/vendors/js/forms/icheck/icheck.min.js"></script>
-    <script src="/admin/app-assets/vendors/js/forms/validation/jqBootstrapValidation.js"></script>
-   
-
+    <script src="app-assets/vendors/js/forms/icheck/icheck.min.js"></script>
+    <script src="app-assets/vendors/js/forms/validation/jqBootstrapValidation.js"></script>
+    
     <!-- END PAGE VENDOR JS-->
     <!-- BEGIN ROBUST JS-->
-    <script src="/admin/app-assets/js/core/app-menu.js"></script>
-    <script src="/admin/app-assets/js/core/app.js"></script>
+    <script src="app-assets/js/core/app-menu.js"></script>
+    <script src="app-assets/js/core/app.js"></script>
     <!-- END ROBUST JS-->
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="/admin/assets/js/scripts.js"></script>
-    <script src="/admin/assets/js/form-login-register.js"></script>
-
-    <script>
-        const AdminPanelDirectory = "/admin";
-        (pageInfo.SSO == "False" || pageInfo.SSO == undefined) ? document.querySelector(".btn-gov-login").classList.add("d-none") : document.querySelector(".btn-gov-login").href = document.URL.substring(0,document.URL.search("admin") + 5) + '/sso.aspx';
-        mainInit();
-        const versionElement = document.querySelector("#portal-version");
-        (pageInfo.portalversion) ? versionElement.textContent = pageInfo.portalversion : versionElement.textContent ='3.2.228 ';
-        //Test Commit AS
-    </script>
+    <script src="assets/js/form-login-register.js"></script>
+    <script src="assets/js/scripts.js"></script>
 
     <!-- END PAGE LEVEL JS-->
+    <script>
+        const AdminPanelDirectory = "/admin";
+
+        mainInit();
+        const alertsContainer = {
+            1 : document.querySelector('#forgotForm .alerts'),
+            2 : document.querySelector('#codeAuthForm .alerts'),
+            3 : document.querySelector('#changePassForm .alerts')
+        }
+        const forms = {
+            1 : document.querySelector('#forgotForm'),
+            2 : document.querySelector('#codeAuthForm'),
+            3 : document.querySelector('#changePassForm')
+        }
+        // Define alert messages
+        const alertMessages = {
+            201: pageInfo.i18n.Captcha_Error,
+            203: pageInfo.i18n.Wrong_Code,
+            303: pageInfo.i18n.User_Not_Admin,
+            302: pageInfo.i18n.User_Not_Active,
+            301: pageInfo.i18n.Wrong_Username_Or_Phone_Or_Email,
+            400: pageInfo.i18n.Change_Pass_Successfull,
+            204: pageInfo.i18n.Code_Is_Expired,
+            401: pageInfo.i18n.Password_Validation_Failed,
+            304: pageInfo.i18n.User_Must_Wait
+        };
+
+        // Function to create alert message
+        function createAlertMessage(message, type = 'danger') {
+            return `
+                <div class="alert alert-${type} alert-dismissible fade show" role="alert">
+                    ${message}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>`;a
+        }
+        
+        // Handle different statuses
+        switch (pageInfo.status) {
+            case 401:
+            case 100:
+                forms[2]?.remove();
+                forms[1]?.remove();
+                var  pattern = "^(?=.*[A-z])(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])" +
+                (pageInfo.specialchars === "0" ? "" : "(?=.*[!@#$%^&*()])" ) +
+                "\\S{"+pageInfo.passwordlength +",18}$" ;
+                document.querySelector("#password").setAttribute("pattern", pattern)
+                if (alertMessages[pageInfo.status]) {
+                    alertsContainer[3].innerHTML = createAlertMessage(alertMessages[pageInfo.status]);
+                }
+                break;
+            case 304:
+            case 204:
+            case 200:
+            case 203:
+                forms[1]?.remove();
+                forms[3]?.remove();
+                document.querySelector(".resend-code").addEventListener('click', (e) =>{
+                    document.querySelector("#codeAuthForm #action").value = "resndcode";
+                    document.querySelector("#codeAuthForm #verificationCode").required = false;
+                })
+                if (alertsContainer && alertMessages[pageInfo.status]) {
+                    alertsContainer[2].innerHTML = createAlertMessage(alertMessages[pageInfo.status]);
+                }
+                break;
+            case 400:
+                forms[2]?.remove();
+                forms[3]?.remove();
+                forms[1].innerHTML = `<div style="font-weight: bold;text-align: center;color: #238016;font-size: 16px;line-height: 33px;" class="p-3">${alertMessages[pageInfo.status]}</div>`;
+                addEventListener("DOMContentLoaded", (event) => {setTimeout(() => {window.location = getUrlBeforeKeyword(String(window.location), 'passwordrecovery')}, 5000);});
+            
+            default:
+                forms[2]?.remove();
+                forms[3]?.remove();
+                if (alertMessages[pageInfo.status]) {
+                    alertsContainer[1].innerHTML = createAlertMessage(alertMessages[pageInfo.status]);
+                }
+                break;
+        }
+
+        // Countdown timer
+        const startingSeconds = 120;
+        let time = startingSeconds;
+        const countdownEl = document.getElementById('countdown');
+
+        // Start countdown timer if countdown element exists
+        if (countdownEl) {
+            let timerInterval = setInterval(updateCountdown, 1000);
+            if(pageInfo.status == 204){
+                    clearInterval(timerInterval);
+                    document.querySelector("#countdown").innerHTML = "0:00";
+                    // Enable resend code button or handle timeout logic
+                    const resendCodeButton = document.querySelector(".resend-code");
+                    if (resendCodeButton) {
+                        resendCodeButton.disabled = false;
+                    }
+            }
+            function updateCountdown() {
+                const minutes = Math.floor(time / 60);
+                let seconds = time % 60;
+                seconds = seconds < 10 ? '0' + seconds : seconds; // Add leading zero if seconds is less than 10
+                countdownEl.textContent = `${minutes}:${seconds}`;
+                if (time <= 0) {
+                    clearInterval(timerInterval);
+                    // Enable resend code button or handle timeout logic
+                    const resendCodeButton = document.querySelector(".resend-code");
+                    if (resendCodeButton) {
+                        resendCodeButton.disabled = false;
+                    }
+                } else {
+                    time--;
+                }
+            }
+        }
+
+        function getUrlBeforeKeyword(url, keyword) {
+            if (!url) {
+                url = window.location.href; 
+            }
+            if (!keyword) {
+                return null; 
+            }
+
+            const position = url.indexOf(keyword);
+
+            // If the keyword is found, return the part before it
+            if (position !== -1) {
+                return url.substring(0, position);
+            } else {
+                return null; // If the keyword is not found, return null
+            }
+            }
+    </script>
+    <style>
+        .resend-code {
+            width: 100px;
+            min-width: max-content;
+            font-size: 13px;
+            padding: 4px 8px;
+        }
+    </style>
 </body>
 
 </html>
