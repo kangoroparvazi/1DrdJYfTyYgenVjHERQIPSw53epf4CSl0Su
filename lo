@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html class="loading" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Esprit Portal Admin">
+    <meta name="keywords" content="Esprit Portal Admin">
+    <title>Esprit Portal Admin</title>
+    <link rel="apple-touch-icon" href="/admin/assets/images/favicon-admin-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/admin/assets/images/favicon-admin.ico">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="/admin/app-assets/css-rtl/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="/admin/app-assets/vendors/css/forms/icheck/square/_all.css">
+    <link rel="stylesheet" type="text/css" href="/admin/app-assets/vendors/css/forms/icheck/custom.css">
+    <link rel="stylesheet" type="text/css" href="/admin/app-assets/css-rtl/core/colors/palette-switch.css">
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN ROBUST CSS-->
+    <link rel="stylesheet" type="text/css" href="/admin/app-assets/css-rtl/app.min.css">
+    <link rel="stylesheet" type="text/css" href="/admin/app-assets/css-rtl/custom-rtl.css">
+    <!-- END ROBUST CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="/admin/app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="/admin/app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="/admin/app-assets/css/pages/login-register.css">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="/admin/assets/css/style-rtl.css">
+    <link rel="stylesheet" type="text/css" href="/admin/assets/css/theme-admin.css">
+    <!-- END Custom CSS-->
+    <script>AdminPanelDirectory="/admin";
+var pageInfo= {"csrf": "" ,"SSO":"False","fullname":"", "userunicid":"","mobile":"","portalversion":"3.1.36.1906","globalversion":"140503192115","browser":"Firefox140", "i18n":{"Esprit_Portal":"اسپریت پورتال","Login_In_Esprit":"ورود به سیستم","Powered_By":"توسعه دهنده","Login":"ورود","Dir":"rtl","Two_Factor_Authentication":"احراز هویت اجباری دو مرحله ای (در صورت فعال بودن پیامک یا ایمیل)","Back_To_Login":"بازکشت به صفحه ورود","Forgot_Password":"فراموشی رمز عبور"}, "pagedata":{}};</script>
+</head>
+
+<body class="vertical-layout vertical-menu 1-column blank-page blank-page dir-ltr" data-open="click"
+    data-menu="vertical-menu" data-col="1-column">
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+    <div class="app-content">
+        <div class="content-wrapper">
+            <div class="content-header row">
+            </div>
+            <div class="content-body login">
+                <section class="flexbox-container height-auto mt-3">
+                    <div class="col-12 d-flex align-items-center justify-content-center dir-rtl">
+                        <div class="col-xs-12 col-md-6 col-lg-4 col-10 box-shadow-2 p-0">
+                            <div class="card border-grey border-lighten-3 m-0">
+                                <div class="card-header border-0">
+                                    
+                                        <div class="card-title text-center">
+                                            <div class=""><img src="/admin/assets/images/logo-admin.png"
+                                                    alt="Esprit Portal Admin"> </div>
+                                        </div>
+                                        
+                                        <a href="https://niafam.com/%D9%BE%D9%88%D8%B1%D8%AA%D8%A7%D9%84-%D8%B3%D8%A7%D8%B2%D9%85%D8%A7%D9%86%DB%8C-%D9%87%D9%88%D8%B4%D9%85%D9%86%D8%AF"
+                                            target="_blank">
+                                            <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-2 ">
+                                                <span data-local="">Esprit Portal Admin</span></h6>
+                                        </a>
+                                    
+                                    
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <form class="form-horizontal form-simple" action="/admin/loginprocess.aspx" onsubmit="codeForm()"
+                                            method="post">
+                                            <fieldset class="form-group position-relative has-icon-right mb-0">
+                                                <input type="text" class="form-control form-control-lg input-lg dir-ltr"
+                                                    name="username" id="user-name"  tabindex="1" placeholder="$User_Name$"
+                                                    autocomplete="off" required>
+                                                <div class="form-control-position">
+                                                    <i class="far fa-user"></i>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset class="form-group position-relative has-icon-right">
+                                                <input type="password"
+                                                    class="form-control form-control-lg input-lg dir-ltr"
+                                                    name="" id="user-password-text"  autocomplete="off"
+                                                    placeholder="$Password$"   tabindex="2" required>
+                                                    <input type="password"
+                                                    class="form-control form-control-lg input-lg dir-ltr"
+                                                    name="password" id="user-password"  autocomplete="off"
+                                                    placeholder="$Password$"   tabindex="2" hidden>
+                                                <div class="form-control-position">
+                                                    <i class="fa fa-key"></i>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset class="form-group position-relative has-icon-right">
+                                                <label class="col-md-12 label-control">$Control_Panel_Language$</label>
+                                                <div class="col-md-12">
+                                                  <select name="adminlanguage" id="adminlanguage" class="form-control">
+                                                    <option value="FA"  selected>$Persian$ </option>
+                                                    <option value="EN" >$English$</option>
+                                                  </select>
+                                                </div>
+                                                
+                                            </fieldset>
+                                            <div class="form-group row">
+                                                <div class="col-md-6 mb-md-0 mb-1"><div class="input-group"><div class="input-group-append"><button class="btn btn-primary" type="button" id="refreshCaptcha"><i class="fas fa-sync-alt"></i></button></div><input type="text" tabindex="3" class="form-control font-large-1" placeholder="Captcha" name="recaptcha"id="recaptcha"></div></div><div class="col-md-5 d-flex justify-content-center"><img src="/admin/engine/captcha.ashx" id="captchaImage" class="img-fluid"></div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-12" id="errMsg"> </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-info btn-lg btn-block btn-admin" tabindex="4"> <span>$Login$</span> <i
+                                                class="fas fa-unlock"></i></button>
+                                            <a href="" class="btn btn-info btn-lg btn-block btn-admin btn-gov-login" tabindex="5"><span>$SSO_Login$</span> </a>
+                                            <a href="/admin/passwordrecovery.aspx" class="btn btn-link d-flex mr-auto ml-auto text-info font-weight-bold" tabindex="6"  style="width: max-content;">$Forgot_Password$</span> </a>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="">
+                                        
+                                        <p class="text-center mb-1"> <span> $A_Product_From$ </span> <a
+                                            href="https://niafam.com"   class="card-link"> niafam.com </a>
+                                        </p>
+                                        
+                                    </div>
+                                    <div class="text-center vversion-control grey lighten-1 font-small-1">
+                                        version : <span id="portal-version"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- BEGIN VENDOR JS-->
+    <script src="/admin/app-assets/vendors/js/vendors.min.js"></script>
+    <script src="/admin/app-assets/js/scripts/base64rpc.js"></script>
+    <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <script src="/admin/app-assets/vendors/js/forms/icheck/icheck.min.js"></script>
+    <script src="/admin/app-assets/vendors/js/forms/validation/jqBootstrapValidation.js"></script>
+   
+
+    <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN ROBUST JS-->
+    <script src="/admin/app-assets/js/core/app-menu.js"></script>
+    <script src="/admin/app-assets/js/core/app.js"></script>
+    <!-- END ROBUST JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <script src="/admin/assets/js/scripts.js"></script>
+    <script src="/admin/assets/js/form-login-register.js"></script>
+
+    <script>
+        const AdminPanelDirectory = "/admin";
+        (pageInfo.SSO == "False" || pageInfo.SSO == undefined) ? document.querySelector(".btn-gov-login").classList.add("d-none") : document.querySelector(".btn-gov-login").href = document.URL.substring(0,document.URL.search("admin") + 5) + '/sso.aspx';
+        mainInit();
+        const versionElement = document.querySelector("#portal-version");
+        (pageInfo.portalversion) ? versionElement.textContent = pageInfo.portalversion : versionElement.textContent ='3.2.228 ';
+        //Test Commit AS
+    </script>
+
+    <!-- END PAGE LEVEL JS-->
+</body>
+
+</html>
