@@ -1,4 +1,78 @@
-//console.log(errorMsg.indexOf("problem:username/password")   )
+/* 
+Build Number : 1009811141018
+*/
+
+$(document).ready(function () {
+	'use strict';
+	//Login Register Validation
+	const errorMsg = ($.qParam("err") || $.qParam("er") || "");
+	let errorText = '';
+
+	if (errorMsg.length > 0) {
+
+		switch (errorMsg) {
+			case "0":
+				errorText = 'Username or Password is wrong.';
+				break
+			case "1":
+				errorText = 'Username or Password is wrong.';
+				break
+			case "1-2":
+				errorText = 'USername or password is wrong';
+				break;
+			case "10":
+				errorText = 'حداکثر تعداد نشست های همزان استفاده شده است !';
+				break
+			case "11":
+				errorText = 'سایتی با این آدرس وجود ندارد!';
+				break
+			case "2001":
+				errorText = 'پیکربندی سامانه پیامک به‌درستی انجام نشده و لازم است تنظیمات مربوط به ارسال پیامک بررسی و اصلاح شود.';
+				break
+			case "2":
+				errorText = 'auth code invalid';
+				break
+			case "22":
+				errorText = 'auth code needed';
+				break
+			case "3":
+				errorText = 'securty problem:CSRFtoken is invalid!';
+				break
+			case "33":
+				errorText = 'securty problem:CSRFtoken is empty!';
+				break
+			case "333":
+				errorText = 'securty problem:CSRFtoken needed!';
+			case "4":
+				errorText = 'access denied!';
+				break
+				break
+			case "5":
+				errorText = 'عملیات صحت سنجی ریکپچا با موفقیت انجام نشد، مجدد سعی کنید .';
+				break
+			case "6":
+				errorText = 'متن تصویر امنیتی را اشتباه وارد نموده اید! لطفا با دقت وارد نمایید.';
+				break
+			case "7":
+				errorText = 'متن تصویر امنیتی وارد نشده است! لطفا با دقت وارد نمایید.';
+				break
+			case "8":
+				errorText = 'متن تصویر امنیتی وارد نشده است! لطفا با دقت وارد نمایید.';
+				break
+			case "9":
+				errorText = 'ورود فقط با SSL مجاز است.';
+			case "1001":
+				errorText = 'شما از حد مجاز، تلاش های ناموفق بیشتری داشته اید. لطفا بعدا مجددا تلاش کنید.'
+				break
+		}
+		$("#errMsg").html(`
+			 <div class="alert alert-danger">${errorText} </div>`).
+		css({
+			"direction": pageInfo.i18n.Dir,
+			"text-align": (pageInfo.i18n.Dir == "rtl" ? "right" : "left")
+		})
+	}
+	//console.log(errorMsg.indexOf("problem:username/password")   )
 	$("input,select,textarea").not("[type=submit]").jqBootstrapValidation({
 		preventSubmit: true,
 		submitError: function ($form, event, errors) {
