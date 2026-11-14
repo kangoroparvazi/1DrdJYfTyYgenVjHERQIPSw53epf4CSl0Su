@@ -1,0 +1,77 @@
+POST /admin/engine/espritajax_upload.ashx?csrf=X9BAVRMH&action=contentfileupload&id=0 HTTP/2
+Host: redacted.tld
+Cookie: visitid=205231.B7B39D9E; cookiesession1=678B76D270A80974F204AF6A93E2D8D2; esprit-session-id=21j34jwob4wkrpgaf1pdfztf; language=FA; espritadminsesscode:=22D29E32EA03C3B9A636C31B1DEAE3F9; esprit-admin-session-id=qqybp5wy2ggraittyprynohr; viewnewsid:25=done; viewnewsid:201335=done
+Content-Length: 13990
+Sec-Ch-Ua-Platform: "Linux"
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Not:A-Brand";v="8", "Chromium";v="156"
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryUWt8YIFBctpA5o7i
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: https://redacted.tld
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://redacted.tld/admin/gallerydetail.aspx?csrf=X9BAVRMH
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Priority: u=1, i
+
+------WebKitFormBoundaryUWt8YIFBctpA5o7i
+Content-Disposition: form-data; name="ax-file-path"
+
+
+------WebKitFormBoundaryUWt8YIFBctpA5o7i
+Content-Disposition: form-data; name="ax-allow-ext"
+
+
+------WebKitFormBoundaryUWt8YIFBctpA5o7i
+Content-Disposition: form-data; name="ax-max-file-size"
+
+2147483647
+------WebKitFormBoundaryUWt8YIFBctpA5o7i
+Content-Disposition: form-data; name="ax-thumbPostfix"
+
+_thumb
+------WebKitFormBoundaryUWt8YIFBctpA5o7i
+Content-Disposition: form-data; name="ax-thumbPath"
+
+
+------WebKitFormBoundaryUWt8YIFBctpA5o7i
+Content-Disposition: form-data; name="ax-thumbFormat"
+
+
+------WebKitFormBoundaryUWt8YIFBctpA5o7i
+Content-Disposition: form-data; name="ax-thumbHeight"
+
+0
+------WebKitFormBoundaryUWt8YIFBctpA5o7i
+Content-Disposition: form-data; name="ax-thumbWidth"
+
+0
+------WebKitFormBoundaryUWt8YIFBctpA5o7i
+Content-Disposition: form-data; name="ax-file-size"
+
+12453
+------WebKitFormBoundaryUWt8YIFBctpA5o7i
+Content-Disposition: form-data; name="ax-file-name"
+
+test.jpeg
+------WebKitFormBoundaryUWt8YIFBctpA5o7i
+Content-Disposition: form-data; name="ax-temp-name"
+
+null
+------WebKitFormBoundaryUWt8YIFBctpA5o7i
+Content-Disposition: form-data; name="ax_file_input"; filename="blob"
+Content-Type: application/octet-stream
+
+ÿØÿà
+------WebKitFormBoundaryUWt8YIFBctpA5o7i
+Content-Disposition: form-data; name="ax-start-byte"
+
+0
+------WebKitFormBoundaryUWt8YIFBctpA5o7i
+Content-Disposition: form-data; name="ax-file-md5"
+
+
+------WebKitFormBoundaryUWt8YIFBctpA5o7i--
